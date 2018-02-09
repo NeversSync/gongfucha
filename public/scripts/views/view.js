@@ -17,6 +17,14 @@
       $('#search-settings').slideToggle('fast');
     })
   };
+
+  // List button
+  view.toggleList = () => {
+    var $listButton = $('.list-button').on('click', function () {
+      $('tea-sidebar').toggleClass('show-list');
+    });
+  };
+
   /*-- Filters (Tea Locations) ---*/
   //This function grabs the data attributes from our tea list and populates the search filters.
   view.populateFilters = function () {
@@ -67,7 +75,7 @@
 
   //Initalize index page with all tea shops, map load and filters.
   view.initIndexPage = function () {
-    TeaLocation.all.forEach(a => $('#tea-sidebar').append(a.toHtml()));
+    TeaLocation.all.forEach(a => $('.tea-sidebar').append(a.toHtml()));
     //solves timing issue for Maps API
     var initUrl = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCS7efQ1L1Es_cFLNYRgXoOZ65bxGf3j2A&callback=googleMap.initMap';
     var body = document.getElementsByTagName('body')[0];
