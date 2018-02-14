@@ -265,13 +265,22 @@ Sidebar & Map
     border-bottom: none;
     box-shadow: none;
 }
-}
 
 #youtube-video {
-  display: none;
+  display: grid;
+  justify-content: center;
+  object-fit: cover;
+  margin-bottom: 2%;
+  /* width: 320px;
+  height: 240px; */
 }
 
 @media (min-width: 800px) {  
+  /*TODO 
+  #youtube-video {
+  width: 960px;
+  height: 720px;
+} */
   /*HEADER*/
   nav {
     position: absolute;
@@ -366,18 +375,12 @@ Sidebar & Map
   /*youtube video*/
 
   #youtube-video {
-  display: block;
-  width: 80%;
-  margin: 0px auto;
-  height: 100%;
-  margin-bottom: 2%;
-  }
-
-  #youtube-video iframe {
-  width: 100%;
+    display: grid;
+    justify-content: center;
+    object-fit: cover;
+    margin-bottom: 2%;
   }
 }
-
 
 
 @media (min-width: 1000px) {
