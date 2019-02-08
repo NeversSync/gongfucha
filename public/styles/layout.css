@@ -14,24 +14,30 @@ Landing Page
 
 @media(min-width:800px) {
   #landing-page {
-    height: 70vh;
+    height: 80vh;
   }
 }
 
 #video-wrapper {
-  overflow-x: hidden;
+  background-image: url("../assets/img/david-pouring-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background: url("assets/img/david-pouring-1.jpg") no-repeat cover fixed center;/ */
+  /* overflow-x: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: -100;
-  width: 100%;
+  width: 100%; */
 }
 
-video { 
+/* video { 
   min-width: 100%;
   min-height: 100vh;
-}
+} */
 
 header {
   overflow: hidden;
@@ -119,10 +125,10 @@ nav ul a {
 
 /*WELCOME TEXT*/
 #welcome-text {
-  width: 85%;
+  width: 80%;
   text-align: center;
-  margin: 8% auto 19% auto; 
-  padding-top: 5px;
+  margin: 5% auto 10% auto; 
+  padding: 5px 10px 20px 10px;
 }
 
 #arrow {
@@ -451,7 +457,7 @@ Sidebar & Map
 
 @media (min-width: 1200px) {
   #welcome-text {
-    width: 80%;
-    margin: 8% auto 10% auto; 
+    width: 60%;
+    margin: 0% auto 10% auto;
   }
 }

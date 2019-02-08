@@ -53,8 +53,9 @@ nav ul a:hover {
 }
 
 #welcome-text h1 {
-  font-family: 'Permanent Marker', cursive;
+  /* font-family: 'Permanent Marker', cursive; */
   font-size: 1.5em;
+  font-weight: 700;
   margin: 10%;
 }
 
